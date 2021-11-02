@@ -1,13 +1,13 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Environment') {
-      agent any
       steps {
-        sh '''printenv
-echo /etc/os-release'''
+        cat '''
+          printenv
+          echo /etc/os-release
+        '''
       }
     }
-
   }
 }
