@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('Environment') {
       steps {
-        cat '''
+        sh '''
           printenv
-          echo /etc/os-release
+          cat /etc/os-release
         '''
       }
     }
