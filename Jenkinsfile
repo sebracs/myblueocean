@@ -19,7 +19,10 @@ cat /etc/os-release
       agent any
       steps {
         sleep 10
-        error 'Oh nooooo!!!'
+        warnError(message: 'Error is not that bad') {
+          error 'Oh nooooo!!!'
+        }
+
       }
     }
 
