@@ -9,12 +9,6 @@ cat /etc/os-release
       }
     }
 
-    stage('Test') {
-      steps {
-        input 'Was test good?'
-      }
-    }
-
     stage('Errors') {
       agent any
       steps {
