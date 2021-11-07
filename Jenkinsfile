@@ -46,7 +46,6 @@ pipeline {
                     - cat
                     tty: true
               '''
-              …
             }
           }
           steps {
