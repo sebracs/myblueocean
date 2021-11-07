@@ -32,7 +32,7 @@ pipeline {
           }
         }
 
-        stage('Anwser') {
+        stage('Anwser2') {
           agent {
             kubernetes {
               inheritFrom 'default'
@@ -47,6 +47,7 @@ pipeline {
                     tty: true
               '''
             }
+
           }
           steps {
             pwsh 'echo "Thanks all good!"'
