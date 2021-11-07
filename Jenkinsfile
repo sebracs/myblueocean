@@ -32,6 +32,12 @@ pipeline {
           }
         }
 
+        stage('Anwser') {
+          steps {
+            bat 'echo Thanks all good!'
+          }
+        }
+
       }
     }
 
