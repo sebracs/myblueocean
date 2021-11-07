@@ -22,7 +22,7 @@ pipeline {
           }
         }
 
-        stage('Anwser2') {
+        stage('Answer') {
           agent {
             kubernetes {
               inheritFrom 'default'
