@@ -19,7 +19,7 @@ cat /etc/os-release
       }
     }
 
-    stage('New') {
+    stage('Hallo') {
       steps {
         echo 'Hallo'
       }
