@@ -4,8 +4,7 @@ pipeline {
     stage('Environment') {
       steps {
         sh '''printenv
-cat /etc/os-release
-        '''
+'''
       }
     }
 
