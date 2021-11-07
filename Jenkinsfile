@@ -15,5 +15,13 @@ cat /etc/os-release
       }
     }
 
+    stage('MyStage') {
+      agent any
+      steps {
+        sleep 10
+        error 'Oh nooooo!!!'
+      }
+    }
+
   }
 }
