@@ -8,16 +8,6 @@ pipeline {
       }
     }
 
-    stage('Errors') {
-      agent any
-      steps {
-        warnError(message: 'Error is not that bad') {
-          error 'Oh nooooo!!!'
-        }
-
-      }
-    }
-
     stage('Hallo') {
       steps {
         echo 'Hallo'
