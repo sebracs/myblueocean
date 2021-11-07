@@ -19,5 +19,11 @@ cat /etc/os-release
       }
     }
 
+    stage('New') {
+      steps {
+        echo 'Hallo'
+      }
+    }
+
   }
 }
