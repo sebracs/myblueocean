@@ -19,8 +19,19 @@ pipeline {
     }
 
     stage('Hallo') {
-      steps {
-        echo 'Hallo'
+      parallel {
+        stage('Hallo') {
+          steps {
+            echo 'Hallo'
+          }
+        }
+
+        stage('Question') {
+          steps {
+            sh 'echo "How are you?"'
+          }
+        }
+
       }
     }
 
