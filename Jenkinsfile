@@ -33,6 +33,22 @@ pipeline {
         }
 
         stage('Anwser') {
+          agent {
+            kubernetes {
+              inheritFrom 'default'
+              defaultContainer 'powershell-core'
+              yaml '''
+                spec:
+                  containers:
+                  - name: powershell-core
+                    image: mcr.microsoft.com/powershell:alpine-3.13
+                    command:
+                    - cat
+                    tty: true
+              '''
+              …
+            }
+          }
           steps {
             pwsh 'echo "Thanks all good!"'
           }
