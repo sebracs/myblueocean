@@ -18,7 +18,6 @@ cat /etc/os-release
     stage('MyStage') {
       agent any
       steps {
-        sleep 10
         warnError(message: 'Error is not that bad') {
           error 'Oh nooooo!!!'
         }
