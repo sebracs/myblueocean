@@ -15,7 +15,7 @@ cat /etc/os-release
       }
     }
 
-    stage('MyStage') {
+    stage('Errors') {
       agent any
       steps {
         warnError(message: 'Error is not that bad') {
