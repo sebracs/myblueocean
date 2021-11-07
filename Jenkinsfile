@@ -34,7 +34,7 @@ pipeline {
 
         stage('Anwser') {
           steps {
-            bat 'echo Thanks all good!'
+            pwsh 'echo "Thanks all good!"'
           }
         }
 
